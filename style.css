@@ -1,0 +1,66 @@
+@media only screen and (max-width: 600px) {
+
+body{
+    
+    background-image: url(assets/background.jpg);
+    background-size: 100%;
+    background-color: #e4e4ee;
+    background-repeat: no-repeat;
+}
+
+#intro H1{
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    display: flex;
+    margin: auto;
+
+}
+.material-icons{
+    color: black;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#intro H3{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#photo{
+    display: block;
+    margin-top: 25%;
+    margin-bottom: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    justify-content: center;
+}
+
+#formation H2{
+    color: black;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-line: underline;
+    margin-right: 10%;
+
+}
+
+#formation H3{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 5%;
+
+}
+
+
+
+
+}
