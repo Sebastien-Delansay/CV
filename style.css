@@ -1,26 +1,49 @@
 @media only screen and (max-width: 600px) {
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     
     background-image: url(assets/background.jpg);
     background-size: 100%;
     background-color: #e4e4ee;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    
 }
 
+
 #intro H1{
+
     font-size: 3em;
     text-align: center;
     letter-spacing: 8px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    display: flex;
-    margin: auto;
-
+    
 }
 .material-icons{
+
     color: black;
     display: block;
+    
+}
+#titre{
+    
+    height: 100vh;
+    padding: auto;
+    margin: auto;
+      
+}
+
+#coord{
+
+    height: 100vh;
+    padding: auto;
+    margin: auto;
     
 }
 
@@ -30,11 +53,12 @@ body{
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    margin-bottom: 5%;
 
 }
 
 #intro H3{
-    font-size: 20px;
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: black;
@@ -45,35 +69,103 @@ body{
 #logo{
     display: block;
     margin-top: 25%;
-    margin-bottom: 10%;
+    
     margin-right: auto;
     margin-left: auto;
     width: 80%;
     justify-content: center;
 }
 
-#formation H2{
-    color: black;
-    text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration-line: underline;
-    margin-right: 10%;
+#formation{
+    
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(assets/formation.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+     
+}
+
+#formation:hover .details{
+    display:block;
+
+    animation-duration: 1s;
+  animation-name: anim;
+  z-index: -10;
+
+  
+
+}
+@keyframes anim {
+    from {
+        transform: translateY(-10em);
+        opacity: 0;
+    }
+  
+    to {
+  
+    transform: translateY(0em);
+        opacity: 1;
+      
+    }
+  }
+
+.details{
+    display: none;
+    background-color: gainsboro; 
+   
 
 }
 
-#formation H3{
+
+
+#formation H2{
+
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    
+}
+
+#formation H3{
+
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     text-align: left;
     margin-left: 5%;
 
 }
 
+#formation H4{
+
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#formation H5{
+
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    
+    text-align: right;
+    margin-right: 5%;
+
+}
+
 #photo{
+
     background-color: darkgrey;
     display: block;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     border-radius: 50%;
     border-style: solid;
     border-width: 2px;
@@ -81,13 +173,76 @@ body{
 }
 
 #avatar{
+
     z-index: -1;
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
+#competences{
+    
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(assets/competence.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: gainsboro;
+    
+    
+}
 
+#competences H2{
 
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    
+}
+
+#exp{
+    
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(assets/experience.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: gainsboro;
+      
+}
+
+#exp H2{
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+
+#loisirs{
+    
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(assets/aboutme.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: gainsboro;
+      
+}
+
+#loisirs H2{
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+
+}
 
 }
