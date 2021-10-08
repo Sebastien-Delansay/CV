@@ -15,6 +15,17 @@ body{
     
 }
 
+footer {
+
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    background-color: black;
+    
+    color: white;
+   
+
+}
+
 
 #intro H1{
 
@@ -84,6 +95,7 @@ body{
     background-image: url(assets/formation.png);
     background-size: 100%;
     background-repeat: no-repeat;
+   
     
      
 }
@@ -91,16 +103,14 @@ body{
 #formation:hover .details{
     display:block;
 
-    animation-duration: 1s;
+    animation-duration: 0.2s;
   animation-name: anim;
-  z-index: -10;
-
   
-
 }
+
 @keyframes anim {
     from {
-        transform: translateY(-10em);
+        transform: translateY(-4em);
         opacity: 0;
     }
   
@@ -113,6 +123,7 @@ body{
   }
 
 .details{
+
     display: none;
     background-color: gainsboro; 
    
@@ -128,6 +139,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 35px;
+    text-shadow: #e4e4ee 2px 2px ;
     
 }
 
@@ -200,6 +212,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 35px;
+    text-shadow: #e4e4ee 2px 2px ;
     
 }
 
@@ -221,6 +234,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 35px;
+    text-shadow: #e4e4ee 2px 2px ;
 
 }
 
@@ -242,6 +256,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 35px;
+    text-shadow: #e4e4ee 2px 2px ;
 
 }
 
