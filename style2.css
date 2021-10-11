@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1025px){
 
 
 .dark-mode{
@@ -28,21 +28,9 @@
     color: white;
 }
 
-.dark-mode #logo{
-    display: none;
-}
 
-.dark-mode #logow{
-    display: block;
-    margin-top: 100px;
-    background-blend-mode:luminosity;
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
-    justify-content: center;
-    max-width: 400px;
-    max-height: 500px;
-}
+
+
 
 .dark-mode #link{
     display: none;
@@ -77,13 +65,13 @@
 
 body{
     
-    background-color: #e4e4ee;
-    display: flex;
-    flex-direction: column;
-    margin: 0%;
-    
-   
-    
+    background-color: #e4e4ee; 
+    background-image: url(assets/Logo.png);
+    background-position: center;
+    background-size: 50%;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+
     
 }
 
@@ -102,13 +90,20 @@ body{
 }
 
 
+
+
 footer p{
 
-    color: grey;
+    color: white;
     text-align: center;
     font-family:'Montserrat', sans-serif;
     font-style: italic;
 
+}
+
+#intro{
+    position: absolute;
+    margin-left: 10%;
 }
 
 
@@ -152,7 +147,7 @@ footer p{
 }
 
 #logo{
-    display: block;
+    display: none;
     margin-top: 100px;
     background-blend-mode:luminosity;
     margin-right: auto;
@@ -184,19 +179,23 @@ footer p{
 #formation{
     
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 55%;
+    margin-right: 10%;
+    margin-top: 80px;
     background-image: url(assets/formation.png);
     background-size: 100%;
+    box-shadow: grey 4px 4px 5px;
     background-repeat: no-repeat;
-    
+   height: 150px;
+   position: relative;
+   z-index: +1000;
     
      
 }
 
 #formation:hover .details{
-    display:block;
-
+    display: block;
+   
     animation-duration: 0.2s;
   animation-name: anim;
   
@@ -204,11 +203,17 @@ footer p{
 
 
 
+
 .details{
 
     display: none;
     background-color: gainsboro; 
+   box-shadow: grey 4px 4px 5px;
    
+    margin-left: -850px;
+    margin-top: -200px;
+    margin-right: 800px;
+    height: 800px;
 
 }
 
@@ -288,15 +293,19 @@ p{
 #competences{
     
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 55%;
+    margin-right: 10%;
+    box-shadow: grey 4px 4px 5px;
     background-image: url(assets/competence.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: gainsboro;
-    
+    height: 150px;
+    position: relative;
+    z-index: +999;
     
 }
+
+
 #competences:hover .detailss{
     display:block;
 
@@ -309,7 +318,12 @@ p{
 
     display: none;
     background-color: gainsboro; 
-   
+    box-shadow: grey 4px 4px 5px;
+   padding-top: 20%;
+    margin-left: -850px;
+    margin-top: -380px;
+    margin-right: 800px;
+    height: 700px;
 
 }
 
@@ -327,13 +341,15 @@ p{
 #exp{
     
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 55%;
+    margin-right: 10%;
     background-image: url(assets/experience.jpg);
     background-size: 100%;
+    box-shadow: grey 4px 4px 5px;
     background-repeat: no-repeat;
-    background-color: gainsboro;
-      
+    height: 150px;
+    position: relative;
+    z-index: +998;
 }
 
 #exp:hover .detailsss{
@@ -348,7 +364,11 @@ p{
 
     display: none;
     background-color: gainsboro; 
-   
+    box-shadow: grey 4px 4px 5px;
+    margin-left: -850px;
+    margin-top: -580px;
+    margin-right: 800px;
+    height: 880px;
 
 }
 
@@ -365,12 +385,15 @@ p{
 #loisirs{
     
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 55%;
+    margin-right: 10%;
+    box-shadow: grey 4px 4px 5px;
     background-image: url(assets/aboutme.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: gainsboro;
+    height: 150px;
+    position: relative;
+    z-index: +997;
       
 }
 
@@ -386,7 +409,12 @@ p{
 
     display: none;
     background-color: gainsboro; 
-   
+    box-shadow: grey 4px 4px 5px;
+    margin-left: -850px;
+    margin-top: -760px;
+    margin-right: 800px;
+    height: 700px;
+    padding-top: 20%;
 
 }
 
@@ -404,7 +432,12 @@ p{
     text-align: center;
 }
 
+.mail:hover {
 
+    transform: scale(1.2);
+    transition: ease all 500ms;
+    
+}
 
 
 @keyframes anim {
@@ -420,4 +453,6 @@ p{
       
     }
   }
+
+  
 }
