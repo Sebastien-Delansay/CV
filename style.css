@@ -12,6 +12,7 @@ body{
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    margin: 0%;
     
 }
 
@@ -52,7 +53,7 @@ footer p{
     
     height: 100vh;
     
-    margin: auto;
+   
       
 }
 
@@ -60,7 +61,7 @@ footer p{
 
     
    
-    margin: auto;
+    
     
 }
 
