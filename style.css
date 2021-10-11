@@ -1,11 +1,10 @@
 @media only screen and (max-width: 1024px) {
 
-
+/* ///////////////////////DARKMODE OPTIONS////////////////////////// */
 .dark-mode{
 
     background-color: rgb(53, 50, 50);
-    
-  
+     
 }
 
 .dark-mode #intro H3{
@@ -29,10 +28,12 @@
 }
 
 .dark-mode #logo{
+
     display: none;
 }
 
 .dark-mode #logow{
+
     display: block;
     margin-top: 100px;
     background-blend-mode:luminosity;
@@ -42,13 +43,17 @@
     justify-content: center;
     max-width: 400px;
     max-height: 500px;
+
 }
 
 .dark-mode #link{
+
     display: none;
+
 }
 
 .dark-mode #linkw{
+
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -56,102 +61,52 @@
 }
 
 .dark-mode #download {
+
     display: none;
 }
 
 .dark-mode #downloadw{
+
     display: block;
     margin-right: auto;
     margin-left: auto;
+
 }
 
 .dark-mode #mail{
+
     display: none;
+
 }
 
 .dark-mode #mailw{
+
     display: block;
-}
-
-
-
-body{
-    
-    background-color: #e4e4ee;
-    display: flex;
-    flex-direction: column;
-    margin: 0%;
-    
-   
-    
-    
-}
-
-.night{
-    position: fixed;
-    margin-top: 10px;
-    margin-left: 10px;
-    color: black;
-
-
-}
-.download{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-footer p{
-
-    color: grey;
-    text-align: center;
-    font-family:'Montserrat', sans-serif;
-    font-style: italic;
 
 }
 
 
-#intro H1{
+/* //////////////////ANIMATIONS KEYFRAMES//////////////////// */
 
-    font-size: 3em;
-    text-align: center;
-    letter-spacing: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    
-}
-.material-icons{
+@keyframes anim {
+    from {
+        transform: translateY(-4em);
+        opacity: 0;
+    }
+  
+    to {
+  
+    transform: translateY(0em);
+        opacity: 1;
+      
+    }
+  }
 
-    color: black;
-    display: block;
-    
-}
 
-
-#intro a{
-    display: block;
-    text-align: center;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-bottom: 5%;
-    text-decoration-line:overline;
-    
-
-}
-
-#intro H3{
-    font-size: 1em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    text-transform: uppercase;
-    margin-left: 0%;
-}
+/* //////////////////LOGO ET IMAGES///////////////////// */
 
 #logo{
+
     display: block;
     margin-top: 100px;
     background-blend-mode:luminosity;
@@ -161,6 +116,34 @@ footer p{
     justify-content: center;
     max-width: 400px;
     max-height: 500px;
+
+}
+
+.material-icons{
+
+    color: black;
+    display: block;
+    
+}
+
+.night{
+
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: black;
+    cursor: pointer;
+    caret-color: transparent;
+
+}
+
+.download{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+
 }
 
 #logow{
@@ -169,59 +152,53 @@ footer p{
 }
 
 #linkw{
+
     display: none;
 }
 
 #downloadw{
+
     display: none;
 }
 
 #mailw{
+
     display: none;
 }
 
+#photo{
 
-#formation{
-    
+    background-color: darkgrey;
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-image: url(assets/formation.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    height: 250px;
+    width: 250px;
+
+}
+
+#avatar{
+
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+
+/* //////////////////////COMMUNS/////////////////////// */
+
+body{
     
-    
-     
-}
-
-#formation:hover .details{
-    display:block;
-
-    animation-duration: 0.2s;
-  animation-name: anim;
-  
-}
-
-
-
-.details{
-
-    display: none;
-    background-color: gainsboro; 
-   
-
-}
-
-
-
-#formation H2{
-
-    color: black;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 35px;
-    text-shadow: #e4e4ee 2px 2px ;
+    background-color: #e4e4ee;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
     
 }
 
@@ -263,27 +240,94 @@ p{
     font-style: italic;
 }
 
-#photo{
+footer p{
 
-    background-color: darkgrey;
+    color: grey;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-style: italic;
+
+}
+
+
+/* //////////////////////SECTION INTRO//////////////////////// */
+
+#intro H1{
+
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+
+#intro a{
+
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    height: 250px;
-    width: 250px;
+    text-align: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5%;
+    text-decoration-line:overline;
+    
 }
 
-#avatar{
+#intro H3{
 
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 0%;
+
 }
+
+
+/* //////////////////////SECTION FORMATIONS///////////////////// */
+
+#formation{
+    
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(assets/formation.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+       
+}
+
+#formation:hover .details{
+
+    display:block;
+    animation-duration: 0.2s;
+    animation-name: anim;
+  
+}
+
+.details{
+
+    display: none;
+    background-color:#dcdce6;
+   
+}
+
+#formation H2{
+
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: #e4e4ee 2px 2px ;
+    
+}
+
+
+/* /////////////////////SECTION COMPETENCES////////////////////// */
 
 #competences{
     
@@ -294,23 +338,22 @@ p{
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: gainsboro;
-    
-    
+      
 }
-#competences:hover .detailss{
-    display:block;
 
+#competences:hover .detailss{
+
+    display:block;
     animation-duration: 0.2s;
-  animation-name: anim;
+    animation-name: anim;
   
 }
 
 .detailss{
 
     display: none;
-    background-color: gainsboro; 
+    background-color: #dcdce6; 
    
-
 }
 
 #competences H2{
@@ -323,6 +366,9 @@ p{
     text-shadow: #e4e4ee 2px 2px ;
     
 }
+
+
+/* /////////////////////////////SECTION EXPERIENCES////////////////////////// */
 
 #exp{
     
@@ -337,22 +383,22 @@ p{
 }
 
 #exp:hover .detailsss{
-    display:block;
 
+    display:block;
     animation-duration: 0.2s;
-  animation-name: anim;
+    animation-name: anim;
   
 }
 
 .detailsss{
 
     display: none;
-    background-color: gainsboro; 
+    background-color: #dcdce6; 
    
-
 }
 
 #exp H2{
+
     color: black;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -361,6 +407,9 @@ p{
     text-shadow: #e4e4ee 2px 2px ;
 
 }
+
+
+/* /////////////////////////SECTION LOISIRS///////////////////////// */
 
 #loisirs{
     
@@ -375,19 +424,18 @@ p{
 }
 
 #loisirs:hover .detailssss{
-    display:block;
 
+    display:block;
     animation-duration: 0.2s;
-  animation-name: anim;
+    animation-name: anim;
   
 }
 
 .detailssss{
 
     display: none;
-    background-color: gainsboro; 
+    background-color: #dcdce6; 
    
-
 }
 
 #loisirs H2{
@@ -400,24 +448,4 @@ p{
 
 }
 
-.download{
-    text-align: center;
-}
-
-
-
-
-@keyframes anim {
-    from {
-        transform: translateY(-4em);
-        opacity: 0;
-    }
-  
-    to {
-  
-    transform: translateY(0em);
-        opacity: 1;
-      
-    }
-  }
 }
